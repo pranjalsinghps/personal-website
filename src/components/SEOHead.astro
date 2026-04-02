@@ -1,0 +1,49 @@
+---
+import { siteConfig } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+  canonicalUrl?: string;
+  jsonLd?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description = siteConfig.description,
+  ogImage = siteConfig.ogImage,
+  ogType = "website",
+  canonicalUrl,
+  jsonLd,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} | ${siteConfig.name}`
+  : siteConfig.name;
+const resolvedCanonical = canonicalUrl || Astro.url.href;
+const resolvedOgImage = new URL(ogImage, siteConfig.url).href;
+---
+
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={resolvedCanonical} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={resolvedCanonical} />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:site_name" content={siteConfig.name} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={resolvedOgImage} />
+
+{jsonLd && (
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+)}

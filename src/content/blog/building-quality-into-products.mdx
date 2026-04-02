@@ -1,0 +1,36 @@
+---
+title: "Building Quality Into Products, Not Testing It In"
+description: "Reflections on shifting QA left -- integrating quality assurance into every stage of the product lifecycle instead of treating it as a final gate."
+date: 2025-01-15
+---
+
+Quality assurance is often treated as the last checkpoint before shipping. A team builds something, tosses it over the wall, and QA finds the bugs. But this model is fundamentally broken.
+
+## The Cost of Late Discovery
+
+Every bug found in production costs exponentially more than one caught during design. When QA is a gate at the end, you're optimising for finding problems rather than preventing them.
+
+The most effective QA engineers I've worked with don't just write test cases -- they sit in design reviews, question assumptions in sprint planning, and challenge product logic before a single line of code is written.
+
+## Shifting Left
+
+"Shift left" isn't just a buzzword. It means:
+
+- **Reviewing PRDs and designs** for edge cases before development starts
+- **Writing test scenarios** alongside acceptance criteria, not after
+- **Automating regression suites** that run on every pull request
+- **Building monitoring dashboards** that catch issues before users report them
+
+At Commenda, we reduced customer First Response Time from 5 hours to under 5 minutes -- not by hiring more support staff, but by building better automated systems and catching issues earlier in the pipeline.
+
+## AI-Assisted Testing
+
+Tools like Cursor and Claude Code have fundamentally changed how I approach test coverage. Instead of manually brainstorming edge cases, I can generate comprehensive test scenarios that cover paths I might have missed.
+
+The key insight: AI doesn't replace the QA engineer's judgment. It amplifies it.
+
+> "Quality is never an accident; it is always the result of intelligent effort." -- John Ruskin
+
+## The Takeaway
+
+If your QA process is a bottleneck, the problem isn't QA -- it's that quality wasn't considered early enough. Build it in from the start.

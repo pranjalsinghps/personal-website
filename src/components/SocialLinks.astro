@@ -1,0 +1,21 @@
+---
+import { socials } from "../data/socials";
+---
+
+<div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-[var(--color-subtle)]">
+  {socials.map((social, i) => (
+    <>
+      <a
+        href={social.url}
+        target={social.type === "link" && !social.url.startsWith("/") ? "_blank" : undefined}
+        rel={social.type === "link" && !social.url.startsWith("/") ? "noopener noreferrer" : undefined}
+        class="hover:text-[var(--color-foreground)] transition-colors"
+      >
+        {social.name}
+      </a>
+      {i < socials.length - 1 && (
+        <span class="text-[var(--color-border)]">&bull;</span>
+      )}
+    </>
+  ))}
+</div>

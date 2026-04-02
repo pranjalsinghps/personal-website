@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  date?: Date;
+}
+
+const { title, description, slug } = Astro.props;
+---
+
+<a
+  href={`/blog/${slug}`}
+  class="group flex flex-col gap-2 py-6 transition-colors"
+>
+  <div class="flex items-baseline justify-between">
+    <h3 class="text-lg font-semibold group-hover:text-[var(--color-accent)] transition-colors">
+      {title}
+    </h3>
+  </div>
+  <p class="text-sm text-[var(--color-muted)] group-hover:text-[var(--color-foreground)] transition-colors">
+    {description}
+  </p>
+</a>

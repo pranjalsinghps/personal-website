@@ -1,0 +1,62 @@
+---
+import type { Experience } from "../data/experience";
+
+interface Props {
+  experience: Experience;
+  showBullets?: boolean;
+}
+
+const { experience, showBullets = false } = Astro.props;
+
+const Tag = experience.url ? "a" : "div";
+const isExternal = experience.url?.startsWith("http");
+---
+
+<Tag
+  href={experience.url || undefined}
+  target={isExternal ? "_blank" : undefined}
+  rel={isExternal ? "noopener noreferrer" : undefined}
+  class="group flex flex-col gap-4 rounded-2xl bg-white/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
+>
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex flex-col gap-1">
+      <h3 class="text-lg font-semibold text-[var(--color-foreground)]">
+        {experience.company}
+      </h3>
+      <p class="text-sm text-[var(--color-muted)]">
+        {experience.role}
+      </p>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-xs uppercase tracking-[0.3em] text-[var(--color-subtle)]">
+        {experience.period}
+      </span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="inline-flex items-center text-[var(--color-subtle)] transition-transform duration-300 group-hover:translate-x-1"
+        aria-hidden="true"
+      >
+        <path d="M7 7h10v10" />
+        <path d="M7 17 17 7" />
+      </svg>
+    </div>
+  </div>
+  <p class="text-sm text-[var(--color-muted)]">
+    {experience.description}
+  </p>
+  {showBullets && experience.bullets.length > 0 && (
+    <ul class="list-disc list-inside space-y-2 text-sm text-[var(--color-muted)]">
+      {experience.bullets.map((bullet) => (
+        <li>{bullet}</li>
+      ))}
+    </ul>
+  )}
+</Tag>

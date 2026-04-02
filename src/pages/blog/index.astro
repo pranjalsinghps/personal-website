@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogEntry from "../../components/BlogEntry.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout
+  title="Blog"
+  description="Writing about quality engineering, product operations, and lessons learned in tech."
+>
+  <div class="flex flex-col gap-12">
+    <div class="flex flex-col gap-4 pb-8 fade-up">
+      <p class="text-xs uppercase tracking-[0.45em] text-[var(--color-subtle)]">
+        Writing
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight">
+        Blog
+      </h1>
+    </div>
+
+    {allPosts.length > 0 ? (
+      <div class="flex flex-col">
+        {allPosts.map((post, i) => (
+          <div class="fade-up" style={`animation-delay: ${i * 0.1}s;`}>
+            <BlogEntry
+              title={post.data.title}
+              description={post.data.description}
+              slug={post.id}
+              date={post.data.date}
+            />
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="text-[var(--color-muted)] fade-up">
+        Posts coming soon.
+      </p>
+    )}
+  </div>
+</BaseLayout>

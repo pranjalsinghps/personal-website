@@ -1,0 +1,38 @@
+---
+const pathname = Astro.url.pathname;
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/experience", label: "Experience" },
+  { href: "/projects", label: "Projects" },
+  { href: "/blog", label: "Blog" },
+];
+
+function isActive(href: string): boolean {
+  if (href === "/") return pathname === "/";
+  return pathname.startsWith(href);
+}
+---
+
+<nav class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between py-10 mb-14">
+  <a
+    class="text-lg font-display tracking-tight text-[var(--color-foreground)] hover:text-[var(--color-accent-strong)] transition-colors"
+    href="/"
+  >
+    Pranjal Singh
+  </a>
+  <div class="flex items-center gap-5 text-xs uppercase tracking-[0.25em] text-[var(--color-subtle)]">
+    {links.map((link) => (
+      <a
+        href={link.href}
+        class:list={[
+          "hover:text-[var(--color-foreground)] transition-colors",
+          { "text-[var(--color-foreground)]": isActive(link.href) },
+        ]}
+        aria-current={isActive(link.href) ? "page" : undefined}
+      >
+        {link.label}
+      </a>
+    ))}
+  </div>
+</nav>
