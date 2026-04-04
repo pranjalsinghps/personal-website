@@ -6,17 +6,26 @@ interface Props {
   date?: Date;
 }
 
-const { title, description, slug } = Astro.props;
+const { title, description, slug, date } = Astro.props;
+
+const formattedDate = date
+  ? date.toLocaleDateString("en-US", { year: "numeric", month: "short" })
+  : undefined;
 ---
 
 <a
   href={`/blog/${slug}`}
-  class="group flex flex-col gap-2 py-6 transition-colors"
+  class="group flex flex-col gap-3 rounded-2xl bg-white/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
 >
-  <div class="flex items-baseline justify-between">
+  <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
     <h3 class="text-lg font-semibold group-hover:text-[var(--color-accent)] transition-colors">
       {title}
     </h3>
+    {formattedDate && (
+      <span class="text-xs uppercase tracking-[0.3em] text-[var(--color-subtle)] shrink-0">
+        {formattedDate}
+      </span>
+    )}
   </div>
   <p class="text-sm text-[var(--color-muted)] group-hover:text-[var(--color-foreground)] transition-colors">
     {description}

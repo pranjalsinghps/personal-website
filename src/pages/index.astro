@@ -171,12 +171,13 @@ const personJsonLd = {
             </svg>
           </a>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-5">
           {allPosts.map((post) => (
             <BlogEntry
               title={post.data.title}
               description={post.data.description}
               slug={post.id}
+              date={post.data.date}
             />
           ))}
         </div>
