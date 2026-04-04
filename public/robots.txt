@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pranjalsingh.dev/sitemap-index.xml
+Sitemap: https://pranjalsingh.com/sitemap-index.xml

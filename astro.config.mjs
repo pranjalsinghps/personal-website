@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
-  site: 'https://pranjalsingh.dev',
+  site: 'https://pranjalsingh.com',
   output: 'static',
   adapter: vercel(),
   integrations: [mdx(), sitemap()],
