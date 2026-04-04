@@ -7,21 +7,25 @@ interface Props {
 }
 
 const { experience, showBullets = false } = Astro.props;
-
-const Tag = experience.url ? "a" : "div";
-const isExternal = experience.url?.startsWith("http");
 ---
 
-<Tag
-  href={experience.url || undefined}
-  target={isExternal ? "_blank" : undefined}
-  rel={isExternal ? "noopener noreferrer" : undefined}
+<a
+  href="/experience"
   class="group flex flex-col gap-4 rounded-2xl bg-white/5 p-6 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10"
 >
   <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
     <div class="flex flex-col gap-1">
       <h3 class="text-lg font-semibold text-[var(--color-foreground)]">
-        {experience.company}
+        {experience.url ? (
+          <span
+            onclick={`event.preventDefault(); event.stopPropagation(); window.open('${experience.url}', '_blank');`}
+            class="underline underline-offset-4 decoration-white/40 hover:decoration-white cursor-pointer"
+          >
+            {experience.company}
+          </span>
+        ) : (
+          experience.company
+        )}
       </h3>
       <p class="text-sm text-[var(--color-muted)]">
         {experience.role}
@@ -44,8 +48,8 @@ const isExternal = experience.url?.startsWith("http");
         class="inline-flex items-center text-[var(--color-subtle)] transition-transform duration-300 group-hover:translate-x-1"
         aria-hidden="true"
       >
-        <path d="M7 7h10v10" />
-        <path d="M7 17 17 7" />
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
       </svg>
     </div>
   </div>
@@ -53,10 +57,13 @@ const isExternal = experience.url?.startsWith("http");
     {experience.description}
   </p>
   {showBullets && experience.bullets.length > 0 && (
-    <ul class="list-disc list-inside space-y-2 text-sm text-[var(--color-muted)]">
+    <ul class="space-y-2 text-sm text-[var(--color-muted)]">
       {experience.bullets.map((bullet) => (
-        <li>{bullet}</li>
+        <li class="flex gap-2">
+          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-subtle)]" aria-hidden="true" />
+          <span>{bullet}</span>
+        </li>
       ))}
     </ul>
   )}
-</Tag>
+</a>

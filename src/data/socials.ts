@@ -7,7 +7,7 @@ export interface Social {
 export const socials: Social[] = [
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/pranjal-singh",
+    url: "https://www.linkedin.com/in/pranjal-singh-3008a6239",
     type: "link",
   },
   {

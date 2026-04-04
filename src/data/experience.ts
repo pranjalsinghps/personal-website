@@ -23,6 +23,7 @@ export const experiences: Experience[] = [
       "Reduced customer First Response Time from 5 hours to under 5 minutes by implementing an automated response system.",
       "Developed an SLA monitoring dashboard to track ticket resolution timelines and support team performance.",
       "Partnered with operations to establish and optimize customer support workflows.",
+      "Leveraged AI-powered tools for automation UI testing and visual UX validation, including Stably.ai for UI test automation, Polarity for functional code testing and code reviews, and Narrative AI for intelligent test generation.",
     ],
   },
   {
