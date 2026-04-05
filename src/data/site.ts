@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Pranjal Singh",
   title: "Pranjal Singh",
   description:
-    "Quality assurance, customer success, and operations specialist at an early-stage startup that scaled from zero to $2M ARR. Proven ability to ship reliable products, build support systems from scratch, and drive cross-functional efficiency in fast-moving environments.",
+    "Quality assurance, Customer Success, and Operations professional with experience at a fast-moving startup that scaled from 0 to $2M ARR. Contributed to product quality through testing, bug identification, and release support. Worked on customer issues and helped build structured support processes to improve resolution and user experience. Collaborated with engineering and product teams to handle edge cases, improve workflows, and ensure smooth product operations.",
   url: "https://pranjalsingh.com",
   ogImage: "/og-image.png",
   role: "QA Engineer & Product Operations",
