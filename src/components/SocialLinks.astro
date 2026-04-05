@@ -7,8 +7,8 @@ import { socials } from "../data/socials";
     <>
       <a
         href={social.url}
-        target={social.type === "link" && !social.url.startsWith("/") ? "_blank" : undefined}
-        rel={social.type === "link" && !social.url.startsWith("/") ? "noopener noreferrer" : undefined}
+        target={social.type === "link" ? "_blank" : undefined}
+        rel={social.type === "link" ? "noopener noreferrer" : undefined}
         class="hover:text-[var(--color-foreground)] transition-colors"
       >
         {social.name}

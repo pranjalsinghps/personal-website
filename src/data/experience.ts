@@ -17,8 +17,7 @@ export const experiences: Experience[] = [
     url: "https://www.commenda.io/",
     description: "Reliability, product testing, and operational efficiency.",
     bullets: [
-      "Tested new product features and user flows in close collaboration with engineers, ensuring stability before launch.",
-      "Collaborated with designers and product team to enhance product logic and improve overall user experience.",
+      "Owned end-to-end quality in an ambiguous startup environment, independently identifying gaps, defining test strategies, and coordinating across engineering, design, and product teams to ship stable releases.",
       "Performed end-to-end product testing using AI-assisted tools (Cursor, Claude Code) and built GitHub CI/CD pipelines for automated regression testing on every pull request.",
       "Reduced customer First Response Time from 5 hours to under 5 minutes by implementing an automated response system.",
       "Developed an SLA monitoring dashboard to track ticket resolution timelines and support team performance.",
