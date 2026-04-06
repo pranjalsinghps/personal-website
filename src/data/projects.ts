@@ -14,7 +14,7 @@ export const projects: Project[] = [
     name: "Manojo",
     year: "2022",
     description:
-      "A content aggregation platform for YouTube. Designed the complete UI in Figma, mapped out information architecture and user flows, and conducted market research to deliver a user-friendly, marketable solution.",
+      "A YouTube content aggregation app. Designed the full UI in Figma, planned out the user flows and information structure, and did market research to make sure it was something people would actually use.",
     tags: ["Figma", "UX Research", "Product Design"],
     featured: true,
   },

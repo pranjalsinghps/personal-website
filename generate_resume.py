@@ -129,20 +129,18 @@ def build():
     )
     pdf.experience_company("Commenda", "Bengaluru, KA")
     for b in [
-        "Owned end-to-end quality in an ambiguous startup environment, "
-        "independently identifying gaps, defining test strategies, and "
-        "coordinating across engineering, design, and product teams to "
-        "ship stable releases.",
-        "Performed end-to-end product testing using AI-assisted tools "
-        "(Cursor, Claude Code, Stably.ai, Polarity, Narrative AI) and built "
-        "GitHub CI/CD pipelines for automated regression testing on every "
-        "pull request.",
-        "Reduced customer First Response Time from 5 hours to under 5 "
-        "minutes by implementing an automated response system, significantly "
-        "improving operational efficiency and customer satisfaction.",
-        "Developed an SLA monitoring dashboard and partnered with operations "
-        "to optimize customer support workflows, enabling data-driven "
-        "decision-making and improved service standards compliance.",
+        "Handled all QA at an early-stage startup where nothing was "
+        "defined yet. Figured out what to test, how to test it, and "
+        "worked with engineering, design, and product to make sure "
+        "releases were solid.",
+        "Set up end-to-end testing using tools like Cursor, Claude Code, "
+        "Stably.ai, Polarity, and Narrative AI. Built CI/CD pipelines on "
+        "GitHub Actions so regression tests ran automatically on every PR.",
+        "Brought customer first response time down from 5 hours to under "
+        "5 minutes by setting up an automated response system.",
+        "Built an SLA dashboard and worked with ops to set up customer "
+        "support workflows from scratch, so we could actually track how "
+        "things were going.",
     ]:
         pdf.bullet(b)
     pdf.ln(3)
@@ -151,28 +149,25 @@ def build():
     pdf.experience_title("Business Analyst", "Jan 2023 - Aug 2024")
     pdf.experience_company("Cedcoss Technologies", "Lucknow, UP")
     for b in [
-        "Analysed user behaviour and client interactions using Hotjar and "
-        "Microsoft Clarity to improve product performance and customer "
-        "satisfaction.",
-        "Collaborated with cross-functional teams (developers, marketing, "
-        "operations) to improve features, streamline processes, and align "
-        "solutions with client requirements.",
-        "Managed US-based client interactions and maintained product "
-        "documentation using CRM systems (Zoho, Freshsales, Freshdesk) "
-        "for data-driven decision-making.",
+        "Used Hotjar and Microsoft Clarity to understand how users were "
+        "actually using the product and where things were falling off.",
+        "Worked across dev, marketing, and ops to improve features and "
+        "make sure what we shipped matched what clients needed.",
+        "Handled direct communication with US-based clients through "
+        "meetings and chat. Kept product docs and CRM tools (Zoho, "
+        "Freshsales, Freshdesk) up to date for the team.",
     ]:
         pdf.bullet(b)
     pdf.ln(3)
 
     # --- Monotype ---
-    pdf.experience_title("Quality Assurance - Trainee", "Jun 2022 - Dec 2022")
+    pdf.experience_title("Quality Assurance, Trainee", "Jun 2022 - Dec 2022")
     pdf.experience_company("Monotype", "Noida, UP")
     for b in [
-        "Led end-to-end user flow testing for production-ready QA, "
-        "including detailed manual testing and code inspections to "
-        "detect flaws and assure product reliability.",
-        "Oversaw agile/scrum teams and used Loom to document findings "
-        "and test cases for clear cross-team communication.",
+        "Ran full user flow testing before releases, including manual "
+        "testing and code inspections to catch issues early.",
+        "Worked within agile/scrum teams and used Loom to record "
+        "findings and share test cases with the rest of the team.",
     ]:
         pdf.bullet(b)
     pdf.ln(4)
@@ -194,8 +189,8 @@ def build():
     pdf.cell(0, 5, "Aug 2019 - Aug 2022", align="R", new_x="LMARGIN", new_y="NEXT")
 
     pdf.bullet(
-        "Developed strong analytical and strategic thinking skills through "
-        "coursework in IT, system analysis, and business operations/management."
+        "Studied IT, system analysis, and business management. "
+        "Graduated with an A+ grade."
     )
     pdf.ln(4)
 
@@ -208,9 +203,9 @@ def build():
     pdf.set_font("Times", "", 10)
     pdf.cell(0, 5, "2022", align="R", new_x="LMARGIN", new_y="NEXT")
     pdf.star_bullet(
-        "Designed the complete UI in Figma for a YouTube content aggregation "
-        "app. Mapped out information architecture and user flows, conducted "
-        "market research, and delivered a user-friendly, marketable solution."
+        "Designed the full UI in Figma for a YouTube content aggregation "
+        "app. Planned out user flows and information structure, and did "
+        "market research to make sure it was something people would use."
     )
     pdf.ln(4)
 

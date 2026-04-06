@@ -10,9 +10,9 @@ export const education: Education[] = [
   {
     institution: "PSIT College Of Higher Education",
     degree: "Bachelor of Computer Applications (BCA)",
-    period: "Aug 2019 — Aug 2022",
+    period: "Aug 2019 - Aug 2022",
     location: "Kanpur, UP",
     description:
-      "Developed strong analytical and strategic thinking skills through coursework in IT, system analysis, and business operations/management.",
+      "Studied IT, system analysis, and business management. Graduated with an A+ grade.",
   },
 ];
