@@ -17,6 +17,7 @@ export const skills: SkillGroup[] = [
       "SaaS Product Operations",
       "Process Optimization",
       "Stakeholder Communication",
+      "API Testing",
       "AI-Assisted Testing",
       "Test Automation",
     ],
