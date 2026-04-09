@@ -223,8 +223,8 @@ def build():
         "Tools: ",
         "Cursor, Claude Code, GitHub Actions, JIRA, Linear, ClickUp, Loom, "
         "Zendesk, Pylon, Freshdesk, Zoho CRM, Hotjar, Microsoft Clarity, "
-        "Figma, Notion, MS Excel, Canva, Postman, Playwright, Stably.ai, "
-        "Polarity, Narrative AI.",
+        "Figma, Notion, MS Excel, Canva, Postman, Playwright, SQL, "
+        "BrowserStack, Stably.ai, Polarity, Narrative AI.",
     )
 
     out_path = "Pranjal_Singh_Resume.pdf"
