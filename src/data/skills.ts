@@ -8,7 +8,7 @@ export const skills: SkillGroup[] = [
     label: "Key Skills",
     items: [
       "Quality Assurance",
-      "Manual/Acceptance Testing",
+      "Manual/User Acceptance Testing (UAT)",
       "Regression Testing",
       "Functional Testing",
       "SDLC",

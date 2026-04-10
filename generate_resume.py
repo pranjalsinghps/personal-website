@@ -213,7 +213,7 @@ def build():
     pdf.section_header("Skills")
     pdf.dash_item(
         "Key Skills: ",
-        "Quality Assurance, Manual/Acceptance Testing, Regression Testing, "
+        "Quality Assurance, Manual/User Acceptance Testing (UAT), Regression Testing, "
         "Functional Testing, API Testing, SDLC, Agile Methodologies, UI/UX Testing, "
         "SaaS Product Operations, Process Optimization, Stakeholder "
         "Communication, AI-Assisted Testing, Test Automation.",
