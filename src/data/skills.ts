@@ -42,6 +42,7 @@ export const skills: SkillGroup[] = [
       "Notion",
       "MS Excel",
       "Canva",
+      "Chargebee",
       "Postman",
       "Playwright",
       "SQL",

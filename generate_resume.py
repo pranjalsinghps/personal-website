@@ -223,7 +223,7 @@ def build():
         "Tools: ",
         "Cursor, Claude Code, GitHub Actions, JIRA, Linear, ClickUp, Loom, "
         "Zendesk, Pylon, Freshdesk, Zoho CRM, Hotjar, Microsoft Clarity, "
-        "Figma, Notion, MS Excel, Canva, Postman, Playwright, SQL, "
+        "Figma, Notion, MS Excel, Canva, Chargebee, Postman, Playwright, SQL, "
         "BrowserStack, Stably.ai, Polarity, Narrative AI.",
     )
 
