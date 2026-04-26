@@ -123,7 +123,7 @@ def build():
 
     # --- Commenda ---
     pdf.experience_title(
-        "Quality Assurance Engineer (Product & Operations)",
+        "QA & AI Engineer (Product & Operations)",
         "Aug 2024 - Present",
     )
     pdf.experience_company("Commenda", "Bengaluru, KA")

@@ -11,7 +11,7 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     company: "Commenda",
-    role: "Quality Assurance Engineer (Product & Operations)",
+    role: "QA & AI Engineer (Product & Operations)",
     period: "Aug 2024 - Present",
     location: "Bengaluru, KA",
     url: "https://www.commenda.io/",
