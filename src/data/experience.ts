@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     description: "Testing, support ops, and making sure things actually work.",
     bullets: [
       "Handled all QA at an early-stage startup where nothing was defined yet. Figured out what to test, how to test it, and worked with engineering, design, and product to make sure releases were solid.",
-      "Set up end-to-end testing using tools like Cursor and Claude Code, and built CI/CD pipelines on GitHub Actions so regression tests ran automatically on every pull request.",
+      "Used prompt engineering with Cursor and Claude Code to write test scripts, generate edge-case scenarios, and build CI/CD pipelines on GitHub Actions that ran regression tests automatically on every pull request.",
       "Brought customer first response time down from 5 hours to under 5 minutes by setting up an automated response system.",
       "Built an SLA dashboard to keep track of how fast tickets were getting resolved and how the support team was performing.",
       "Worked with the ops team to set up and improve customer support workflows from scratch.",

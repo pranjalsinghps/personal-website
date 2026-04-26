@@ -105,16 +105,15 @@ def build():
     pdf.section_header("Professional Summary")
     pdf.set_font("Times", "", 9.5)
     summary = (
-        "Quality Assurance, Customer Success, and Product Operations "
-        "professional with experience at a fast-moving startup that "
-        "scaled from 0 to $2M ARR. I've worked on testing features, "
+        "Quality Assurance, AI Engineering, Customer Success, and Product "
+        "Operations professional with experience at a fast-moving startup "
+        "that scaled from 0 to $2M ARR. I've worked on testing features, "
         "identifying bugs early, and supporting smooth product releases, "
         "while also handling customer issues and setting up support "
-        "processes as the product grew. Along the way, I collaborated "
-        "with engineering and product teams to understand user behaviour, "
-        "catch edge cases, and improve overall workflows. I enjoy working "
-        "in fast-paced environments where I can take ownership and solve "
-        "real problems."
+        "processes as the product grew. I use AI and prompt engineering "
+        "to build testing pipelines, automate workflows, and speed up "
+        "how teams ship. I enjoy working in fast-paced environments "
+        "where I can take ownership and solve real problems."
     )
     pdf.multi_cell(0, 4.5, summary)
     pdf.ln(4)
@@ -133,9 +132,10 @@ def build():
         "defined yet. Figured out what to test, how to test it, and "
         "worked with engineering, design, and product to make sure "
         "releases were solid.",
-        "Set up end-to-end testing using tools like Cursor, Claude Code, "
-        "Stably.ai, Polarity, and Narrative AI. Built CI/CD pipelines on "
-        "GitHub Actions so regression tests ran automatically on every PR.",
+        "Used prompt engineering with Cursor, Claude Code, Stably.ai, "
+        "Polarity, and Narrative AI to write test scripts, generate "
+        "edge-case scenarios, and build CI/CD pipelines on GitHub Actions "
+        "that ran regression tests automatically on every PR.",
         "Brought customer first response time down from 5 hours to under "
         "5 minutes by setting up an automated response system.",
         "Built an SLA dashboard and worked with ops to set up customer "
@@ -216,7 +216,8 @@ def build():
         "Quality Assurance, Manual/User Acceptance Testing (UAT), Regression Testing, "
         "Functional Testing, API Testing, SDLC, Agile Methodologies, UI/UX Testing, "
         "SaaS Product Operations, Process Optimization, Stakeholder "
-        "Communication, AI-Assisted Testing, Test Automation.",
+        "Communication, AI Engineering, Prompt Engineering, "
+        "AI-Assisted Testing, Test Automation.",
     )
     pdf.ln(1)
     pdf.dash_item(
