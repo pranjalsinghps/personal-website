@@ -22,6 +22,7 @@ export const skills: SkillGroup[] = [
       "Prompt Engineering",
       "AI-Assisted Testing",
       "Test Automation",
+      "Customer Support",
     ],
   },
   {
