@@ -27,16 +27,16 @@ export const experiences: Experience[] = [
   },
   {
     company: "Cedcoss Technologies",
-    role: "Business Analyst",
+    role: "Customer Experience Specialist",
     period: "Jan 2023 - Aug 2024",
     location: "Lucknow, UP",
     url: "https://cedcoss.com/",
     description: "Understanding users, working across teams, and managing client relationships.",
     bullets: [
-      "Used Hotjar and Microsoft Clarity to understand how users were actually using the product and where things were falling off.",
-      "Worked across dev, marketing, and ops to improve features and make sure what we shipped matched what clients needed.",
-      "Handled direct communication with US-based clients through meetings and chat, answering questions and keeping things on track.",
-      "Kept product docs, user guides, and CRM tools (Zoho, Freshsales, Freshdesk) up to date so the team had good data to work with.",
+      "Served as the primary point of contact for US-based clients, conducting product walkthroughs, onboarding sessions, and ongoing support via chat, email, and scheduled calls across multiple time zones.",
+      "Managed customer relationships in CRM tools (Zoho, Freshsales, Freshdesk), ensuring timely follow-ups, accurate account records, and proactive outreach to at-risk accounts.",
+      "Analyzed user behavior with Hotjar and Microsoft Clarity to identify friction points in the customer journey, then partnered with product and engineering teams to resolve issues—directly reducing churn and improving the user experience.",
+      "Collected, organized, and prioritized customer feedback to inform product roadmap decisions, ensuring the voice of the customer was represented in cross-functional planning meetings.",
     ],
   },
   {
