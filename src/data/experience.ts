@@ -17,12 +17,12 @@ export const experiences: Experience[] = [
     url: "https://www.commenda.io/",
     description: "Product quality + customer success, end to end.",
     bullets: [
-      "Owned product quality at an early-stage startup: defined what “good” looks like, built lightweight QA processes, and partnered with engineering, design, and product to ship confident releases.",
-      "Built GitHub Actions CI/CD pipelines to run automated regression tests on every pull request; used Cursor + Claude Code to generate edge-case scenarios and speed up test scripting.",
-      "Improved customer experience by reducing first response time from 5 hours to under 5 minutes via an automated triage + response workflow.",
-      "Created an SLA dashboard to track ticket health, response/resolution performance, and operational bottlenecks.",
-      "Set up and iterated on support workflows from scratch with the ops team, keeping the feedback loop tight between customers and product.",
-      "Used Stably.ai for UI automation, Polarity for code testing/review, and Narrative AI to generate high-signal test cases.",
+      "Owned the entire customer support function as the first dedicated hire at an early-stage startup. Designed support workflows, escalation processes, and resolution protocols that scaled the company from launch to $2M ARR.",
+      "Reduced customer first response time from 5 hours to under 5 minutes by building an automated triage and response system using Zendesk and Pylon, directly improving CSAT and retention.",
+      "Built an SLA performance dashboard to track response times, resolution rates, and satisfaction metrics (CSAT, FCR, AHT), enabling data-driven improvements to the support experience.",
+      "Collaborated daily with engineering, product, and design teams to escalate customer-reported issues, translate feedback into product improvements, and ensure seamless releases.",
+      "Performed end-to-end product QA using Playwright, Postman, and BrowserStack. Used Cursor and Claude Code (prompt engineering) to build test scripts, regression suites, and CI/CD pipelines on GitHub Actions—catching bugs before they reached customers.",
+      "Investigated customer-reported bugs from initial report through root cause analysis to resolution—coordinating fixes with engineering, keeping customers informed, and closing the loop.",
     ],
   },
   {
