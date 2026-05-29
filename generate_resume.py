@@ -123,54 +123,42 @@ def build():
 
     # --- Commenda ---
     pdf.experience_title(
-        "QA & AI Engineer (Product & Operations)",
+        "Product QA & Customer Success Specialist",
         "Aug 2024 - Present",
     )
     pdf.experience_company("Commenda", "Bengaluru, KA")
     for b in [
-        "Handled all QA at an early-stage startup where nothing was "
-        "defined yet. Figured out what to test, how to test it, and "
-        "worked with engineering, design, and product to make sure "
-        "releases were solid.",
-        "Used prompt engineering with Cursor, Claude Code, Stably.ai, "
-        "Polarity, and Narrative AI to write test scripts, generate "
-        "edge-case scenarios, and build CI/CD pipelines on GitHub Actions "
-        "that ran regression tests automatically on every PR.",
-        "Brought customer first response time down from 5 hours to under "
-        "5 minutes by setting up an automated response system.",
-        "Built an SLA dashboard and worked with ops to set up customer "
-        "support workflows from scratch, so we could actually track how "
-        "things were going.",
+        "Owned the entire customer support function as the first dedicated hire at an early-stage startup. Designed support workflows, escalation processes, and resolution protocols that scaled the company from launch to $2M ARR.",
+        "Reduced customer first response time from 5 hours to under 5 minutes by building an automated triage and response system using Zendesk and Pylon, directly improving CSAT and retention.",
+        "Built an SLA performance dashboard to track response times, resolution rates, and satisfaction metrics (CSAT, FCR, AHT), enabling data-driven improvements to the support experience.",
+        "Collaborated daily with engineering, product, and design teams to escalate customer-reported issues, translate feedback into product improvements, and ensure seamless releases.",
+        "Performed end-to-end product QA using Playwright, Postman, and BrowserStack. Used Cursor and Claude Code (prompt engineering) to build test scripts, regression suites, and CI/CD pipelines on GitHub Actions - catching bugs before they reached customers.",
+        "Investigated customer-reported bugs from initial report through root cause analysis to resolution - coordinating fixes with engineering, keeping customers informed, and closing the loop.",
     ]:
         pdf.bullet(b)
-    pdf.ln(3)
+    pdf.ln(2)
 
     # --- Cedcoss ---
-    pdf.experience_title("Business Analyst", "Jan 2023 - Aug 2024")
+    pdf.experience_title("Customer Experience Specialist", "Jan 2023 - Aug 2024")
     pdf.experience_company("Cedcoss Technologies", "Lucknow, UP")
     for b in [
-        "Used Hotjar and Microsoft Clarity to understand how users were "
-        "actually using the product and where things were falling off.",
-        "Worked across dev, marketing, and ops to improve features and "
-        "make sure what we shipped matched what clients needed.",
-        "Handled direct communication with US-based clients through "
-        "meetings and chat. Kept product docs and CRM tools (Zoho, "
-        "Freshsales, Freshdesk) up to date for the team.",
+        "Served as the primary point of contact for US-based clients, conducting product walkthroughs, onboarding sessions, and ongoing support via chat, email, and scheduled calls across multiple time zones.",
+        "Managed customer relationships in CRM tools (Zoho, Freshsales, Freshdesk), ensuring timely follow-ups, accurate account records, and proactive outreach to at-risk accounts.",
+        "Analyzed user behavior with Hotjar and Microsoft Clarity to identify friction points in the customer journey, then partnered with product and engineering teams to resolve issues - directly reducing churn and improving the user experience.",
+        "Collected, organized, and prioritized customer feedback to inform product roadmap decisions, ensuring the voice of the customer was represented in cross-functional planning meetings.",
     ]:
         pdf.bullet(b)
-    pdf.ln(3)
+    pdf.ln(2)
 
     # --- Monotype ---
     pdf.experience_title("Quality Assurance, Trainee", "Jun 2022 - Dec 2022")
     pdf.experience_company("Monotype", "Noida, UP")
     for b in [
-        "Ran full user flow testing before releases, including manual "
-        "testing and code inspections to catch issues early.",
-        "Worked within agile/scrum teams and used Loom to record "
-        "findings and share test cases with the rest of the team.",
+        "Ran full user flow testing before releases, including manual testing and code inspections to catch issues early.",
+        "Worked within agile/scrum teams and used Loom to record findings and share test cases with the rest of the team.",
     ]:
         pdf.bullet(b)
-    pdf.ln(4)
+    pdf.ln(3)
 
     # ── Education ──
     pdf.section_header("Education")
@@ -191,21 +179,6 @@ def build():
     pdf.bullet(
         "Studied IT, system analysis, and business management. "
         "Graduated with an A+ grade."
-    )
-    pdf.ln(4)
-
-    # ── Projects ──
-    pdf.section_header("Projects")
-    pdf.set_font("Times", "B", 10)
-    proj_title = "Manojo - Content Aggregation Platform"
-    pw = pdf.get_string_width(proj_title)
-    pdf.cell(pw, 5, proj_title)
-    pdf.set_font("Times", "", 10)
-    pdf.cell(0, 5, "2022", align="R", new_x="LMARGIN", new_y="NEXT")
-    pdf.star_bullet(
-        "Designed the full UI in Figma for a YouTube content aggregation "
-        "app. Planned out user flows and information structure, and did "
-        "market research to make sure it was something people would use."
     )
     pdf.ln(4)
 
